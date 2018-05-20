@@ -111,6 +111,29 @@
 
 		// Main Sections: Two.
 
+		//tri
+	var $grid = $('.row').isotope({
+    	// options
+    	itemSelector: '.element-item',
+    });
+    
+	$(window).load(function(){$grid.isotope('layout');});
+    
+    // filter items on button click
+    $('.filters-button-group>button').on('click', function() {
+    	var filterValue = $(this).attr('data-filter');
+    	console.log(filterValue);
+    	$grid.isotope({ filter: filterValue });
+    });
+    
+    $('.filter-button-group').each(function(i, buttonGroup) {
+    	var $buttonGroup = $(buttonGroup);
+    	$buttonGroup.on('click', '.nav-item', function() {
+    		$buttonGroup.find('.is-checked').removeClass('is-checked');
+    		$(this).addClass('is-checked');
+    	});
+    })
+
 			// Lightbox gallery.
 				$window.on('load', function() {
 
