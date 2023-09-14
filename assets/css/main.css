@@ -1769,7 +1769,13 @@
 	}
 	
 	header a {
-		color: #cac9c8;
+		color: #b2b2b2;
+		position: relative;
+		margin: 0 0 1.5em 0;
+	}
+
+	header a:hover {
+		color: #ffffff;
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
@@ -2446,7 +2452,7 @@
 		.button:active {
 			background-color: rgba(73, 191, 157, 0.1);
 			border-color: #F45A37;
-			color: #49bf9d !important;
+			color: #F45A37 !important;
 		}
 
 		input[type="submit"].icon,
@@ -2491,8 +2497,8 @@
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: #49bf9d;
-			border-color: #49bf9d;
+			background-color: #F45A37;
+			border-color: #F45A37;
 			color: #ffffff !important;
 		}
 
@@ -2500,8 +2506,8 @@
 			input[type="reset"].special:hover,
 			input[type="button"].special:hover,
 			.button.special:hover {
-				background-color: #5cc6a7;
-				border-color: #5cc6a7;
+				background-color: #F45A37;
+				border-color: #F45A37;
 			}
 
 			input[type="submit"].special:active,
