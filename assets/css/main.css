@@ -2161,7 +2161,11 @@
 			max-width: 50%;
 		}
 
-			.image.left img, .image.right img {
+		.image.left img, .image.right img {
+				width: 100%;
+			}
+
+		.image.lefttt img, .image.righttt img {
 				width: 100%;
 			}
 
