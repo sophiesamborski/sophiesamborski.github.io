@@ -2135,7 +2135,19 @@
 			top: 0.25em;
 		}
 
+		.image.lefttt {
+			float: left;
+			margin: 0 1.5em 1em 0;
+			top: 0.25em;
+		}
+
 		.image.right {
+			float: right;
+			margin: 0 0 1em 1.5em;
+			top: 0.25em;
+		}
+
+		.image.righttt {
 			float: right;
 			margin: 0 0 1em 1.5em;
 			top: 0.25em;
@@ -2143,6 +2155,10 @@
 
 		.image.left, .image.right {
 			max-width: 40%;
+		}
+
+		.image.lefttt, .image.righttt {
+			max-width: 50%;
 		}
 
 			.image.left img, .image.right img {
